@@ -38,9 +38,9 @@ const App = () => {
                         <li key={`num-${index}`}>{num}</li>
                     ))}
                 </ul>
-            </div>
+            </div> 
             <div>
-                <h2>Echo Messaes</h2>
+                <h2>Echo Messages</h2>
                 <ul>
                     {echoes.map((msg, index) => (
                         <li key={`echo-${index}`}>{msg}</li>
