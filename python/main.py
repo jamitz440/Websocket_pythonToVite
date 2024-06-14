@@ -12,13 +12,12 @@ def start_servers():
     time.sleep(2)  # Adjust as needed
 
     # Change directory to React app directory
-    os.chdir(
-        "/Users/jamesfitzsimons/Developer/websockets test/websockets"
-    )  # Replace with your React app directory
+    os.chdir("/workspaces/Websocket_pythonToVite")  # Corrected path
+    
 
     # Start React development server
     react_server_cmd = ["npm", "run", "dev"]
-    react_server_process = subprocess.Popen(react_server_cmd)
+    react_server_process = subprocess.Popen(react_server_cmd)    # Change directory to React app directory
 
     # Optionally, wait for processes to finish (if needed)
     python_server_process.wait()
